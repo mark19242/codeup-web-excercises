@@ -175,18 +175,18 @@ const random = Math.floor((Math.random() * 3) + 1);
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-const calculateTip = (tipPercentage, billTotal) => {
-  return billTotal * tipPercentage;
-};
-
-const billTotal = parseInt(prompt("What is the total on the bill?"));
-const tipPercentage = parseFloat(
-  prompt("What percentage would you like to tip?")
-);
-
-const total = calculateTip(tipPercentage, billTotal);
-
-alert(`You should tip $${total.toFixed(2)}`);
+// const calculateTip = (tipPercentage, billTotal) => {
+//   return billTotal * tipPercentage;
+// };
+//
+// const billTotal = parseInt(prompt("What is the total on the bill?"));
+// const tipPercentage = parseFloat(
+//   prompt("What percentage would you like to tip?")
+// );
+//
+// const total = calculateTip(tipPercentage, billTotal);
+//
+// alert(`You should tip $${total.toFixed(2)}`);
 
 
 /**
@@ -204,15 +204,15 @@ alert(`You should tip $${total.toFixed(2)}`);
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-// const applyDiscount = (discount, itemPrice)=>{
-//     let discountAmount = (100 * discount) / itemPrice;
-//     let newTotal = itemPrice - discountAmount
-//     return newTotal;
-// };
-//
-// let yourItemPrice = prompt(`how much was your item?`);
-// let discountPercent = prompt(`how much was your discount?`);
-//
-// let discountedPrice = applyDiscount(parseFloat(discountPercent), parseFloat(yourItemPrice));
-//
-// alert(`after your discount the item will be ${discountedPrice}`);
+const applyDiscount = (discount, itemPrice)=>{
+    let discountAmount = (100 * discount) / itemPrice;
+    let newTotal = itemPrice - discountAmount
+    return newTotal;
+};
+
+let yourItemPrice = prompt(`how much was your item?`);
+let discountPercent = prompt(`how much was your discount?`);
+
+let discountedPrice = applyDiscount(parseFloat(discountPercent), parseFloat(yourItemPrice));
+
+alert(`after your discount the item will be ${discountedPrice}`);

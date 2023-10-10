@@ -123,24 +123,24 @@ console.log(!!"0")
 
 let sample = "Hello Codeup";
 
-let NumberOfCharacters = sample.length;
-let indexOfc = sample.indexOf("c");
-console.log(`Index of lowercase c is => ${indexOfc}`);
-let hasLowercaseC = indexOfc >= 0;
-console.log(NumberOfCharacters)
-console.log(sample.toUpperCase())
-console.log(sample + 'Students');
-const p = 'Hello Codeup'
-console.log(p.replace('Codeup', 'Class'))
-let indexOfC = sample.indexOf("C")
-console.log(`Index of Uppercase C => ${indexOfC}`)
-let substring = sample.substring
-console.log(sample.substring(6));
-let LM = 3
-let BB = 5
-let H = 1
-const pricePerADay = 3
-console.log (pricePerADay*(LM + BB + H));
+// let NumberOfCharacters = sample.length;
+// let indexOfc = sample.indexOf("c");
+// console.log(`Index of lowercase c is => ${indexOfc}`);
+// let hasLowercaseC = indexOfc >= 0;
+// console.log(NumberOfCharacters)
+// console.log(sample.toUpperCase())
+// console.log(sample + 'Students');
+// const p = 'Hello Codeup'
+// console.log(p.replace('Codeup', 'Class'))
+// let indexOfC = sample.indexOf("C")
+// console.log(`Index of Uppercase C => ${indexOfC}`)
+// let substring = sample.substring
+// console.log(sample.substring(6));
+// let LM = 3
+// let BB = 5
+// let H = 1
+// const pricePerADay = 3
+// console.log (pricePerADay*(LM + BB + H));
 
 // const googlePerHour = 400;
 // const FacebookPerHour = 350;
