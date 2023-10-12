@@ -47,7 +47,7 @@
      * 'names'.
      */
 
-    const names = ["Mark", "Ivania", "Arriana", "James"];
+    // const names = ["Mark", "Ivania", "Arriana", "James"];
 
     /**
      * TODO:
@@ -64,7 +64,7 @@
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-
+    //Bracket notation []
 
     // console.log(name[0],name[1],name[2],name[3]);
 
@@ -75,17 +75,12 @@
      * array.
      */
 
-for (let name of names) {
- 	if (name.includes("Mark")) {
-		console.log(name);
-	}else{(name.includes("Ivania")) {
-        console.log(name);
-    }else{ (name.includes("Ivania")) {
-        console.log(name);
-    }
+    const names = ["Mark", "Ivania", "Arriana", "James"];
+
+    for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
     }
 
-}
 
 
 
@@ -93,6 +88,17 @@ for (let name of names) {
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
+// names.forEach => anonymous function.  (element, index, array)
+        names.forEach((name, index, array) => {
+            if (name.includes("Mark")) {
+                console.log(names);
+
+            }
+        });
+
+        //Much easier way
+        //names.forEach(name) =>(
+        //console.log(name)
 
     /**
      * TODO:
@@ -107,4 +113,12 @@ for (let name of names) {
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
+const firstName = names[0];
+console.log(firstName);
+
+const secondName = names[1];
+console.log(secondName)
+
+const lastName = names[3];
+console.log(lastName)
 
