@@ -88,13 +88,13 @@
 //
 // console.log(fullAmount)
 
-* Functions
-* #1 Make sure they are named contextually and appropriately.
-* #2 Functions declared at the top of the file.
-* #3 Do not use global variables inside of functions, pass them as arguments instead.
-* #4 Build and return; functions should not be opinonated on what you do with the result, just reurn it.
-* #5 validate and return early; make sure its running correctly early
-* #6 Functions - validate- build the result - return the result
+// * Functions
+// * #1 Make sure they are named contextually and appropriately.
+// * #2 Functions declared at the top of the file.
+// * #3 Do not use global variables inside of functions, pass them as arguments instead.
+// * #4 Build and return; functions should not be opinonated on what you do with the result, just reurn it.
+// * #5 validate and return early; make sure its running correctly early
+// * #6 Functions - validate- build the result - return the result
 
 
 // contextually and appropriately named
@@ -108,19 +108,52 @@ const getUserName = (id) => {
 
  // ....
 
-return username
+// return username
+//
+//
+//
+//
+// if () {
+//
+// } else if () {
+//
+// } else {
+
+// }
+
+// let price = 2.7;
+// let priceFixed = parseFloat(price).toFixed(2);
+// console.log(priceFixed);
 
 
+// 1. Create a function that takes an array of numbers as input and returns the sum of all the elements.
 
 
-if () {
-
-} else if () {
-
-} else {
-
+Const = SumOfAllElements = (array) => {
+    let total = 0;
+    for (let i =0; i < array.length; i++) {
+        total += array[i];
+    }
+    return total;
 }
 
+const numbers= [1,2,3,4];
+const result = SumOfAllElements(numbers);
+
+console.log(result);
 
 
 
+// 2. Write a function that takes a string as input and returns the reverse of the string.
+
+
+
+// 3. Given an array of names, create a function that finds the longest name in the array and returns it.
+
+// 4. Create a function that takes an array of numbers as input and returns a new array with only the even numbers.
+
+// 5. Write a function that takes an object as input and returns an array of its keys.
+
+// 6. Given an array of objects with 'name' and 'age' properties, create a function that returns an array of names of people who are above 18 years old.
+
+// 7. Create a function that simulates rolling a six-sided dice. The function should return a random number between 1 and 6.
