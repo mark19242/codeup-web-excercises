@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+:root {
+    --clr-primary: poop;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: unset;
+}
+
+.container {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+}
+
+
+#page-header{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header img {
+    width: 150px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+}
+nav > ul > li {
+    padding: 10px 20px;
+}
+
+nav > ul > li > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.container.hero {
+    min-height: 70dvh;
+    background-color: green;
+    background-image: url("../img/IntelliJ IDEA.jpeg") ;
+    background-position: center;
+    background repeat no-repeat;
+
+}
+

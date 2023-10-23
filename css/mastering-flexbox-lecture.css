@@ -1,0 +1,19 @@
+@import "mastering-flexbox-base.css";
+
+/* This is the file we will use to experiment with flexbox */
+.container {
+    display: flex;
+    min-height: 80dvh;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+
+}
+
+.item {
+    order: 1;
+}
+
+#item-1{
+    order: 2;
+}

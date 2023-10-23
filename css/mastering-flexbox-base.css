@@ -1,0 +1,62 @@
+@import "resets.css";
+
+:root {
+	--clr-dark: #0f172a;
+	--clr-light: #f1f5f9;
+	--clr-primary: #e11d48;
+	--clr-primary-light: #fb7185;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	width: 80%;
+	border: 10px solid var(--clr-dark);
+	position: relative;
+}
+.container:before {
+	content: ".container";
+	position: absolute;
+	top: -40px;
+	left: 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--clr-dark);
+}
+
+.item {
+	position: relative;
+	min-width: 150px;
+	min-height: 150px;
+	background-color: var(--clr-primary-light);
+	padding: 1em;
+	font-weight: 700;
+	color: var(--clr-light);
+	font-size: 0.8rem;
+	border: 10px solid var(--clr-primary);
+	border-radius: 10px;
+}
+/* 
+.item:before {
+  content: "min-width: 150px;";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: var(--clr-light);
+}
+.item:after {
+  content: "min-height: 150px;";
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: var(--clr-light);
+} */
