@@ -1,0 +1,22 @@
+@import "position-lecture-base.css";
+
+/* This is the file we will use to experiment with position */
+.container {
+  position: relative;
+
+}
+
+#item-1 {
+
+}
+
+#item-1 span{
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #000000;
+  bottom: 0px;
+  left: 300px;
+
+}

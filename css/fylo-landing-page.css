@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+    --clr-white: #fff;
+    --clr-primary: #2f65f8;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    hyphens: none;
+}
+
+.row {
+    max-width: 1280px;
+    max-width: 1320px;
+}
+
+h1,
+@@ -17,6 +24,27 @@ h6 {
+                       font-family: "Raleway", sans-serif;
+                   }
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    background-color: var(--clr-primary);
+    padding: 10px 60px;
+    border: unset;
+    outline: none;
+    color: var(--clr-white);
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+input {
+    padding: 14px 20px;
+    min-width: unset;
+}
+
+img.logo {
+    max-width: 166px;
+}
+@@ -25,6 +53,20 @@ img.logo {
+                       min-height: 80dvh;
+                   }
+
+.container.hero p {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    max-width: 585px;
+}
+
+.container.hero .row {
+    gap: 55px;
+}
+
+.container.hero form {
+    max-width: 536px;
+}
+
+@media screen and (max-width: 800px) {
+    .container.hero .row {
+        flex-direction: column;
+
+    <h6 style="width: 100%">SELECTED WORK</h6>
+    <div class="col col-xs-12 col-md-6">
+    <img src="./images/apple-ipad.jpg" class="img-fluid">
+    <div class="row">
+    <div class="col col-lg-6">
+    <h5>FEATURED PROJECT</h5>
+    </div>
+    <div class="col">
+    <div class="row row-cols-auto justify-content-end">
+    <div class="col">
+    <div class="circleA  d-flex justify-content-center align-items-center">D</div>
+    </div>
+    <div class="col">
+    <div class="circleB  d-flex justify-content-center align-items-center">D</div>
+    </div>
+    <div class="col">
+    <div class="circleC  d-flex justify-content-center align-items-center">S</div>
+    </div>
+    <div class="col">
+    <div class="circleD  d-flex justify-content-center align-items-center">H</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col col-xs-12 col-md-6">
+    <img src="./images/macbook.jpg" class="img-fluid">
+    <div class="row">
+    <div class="col col-lg-6">
+    <h5>FEATURED PROJECT</h5>
+    </div>
+    <div class="col">
+    <div class="row row-cols-auto justify-content-end">
+    <div class="col">
+    <div class="circleA  d-flex justify-content-center align-items-center">D</div>
+    </div>
+    <div class="col">
+    <div class="circleB  d-flex justify-content-center align-items-center">D</div>
+    </div>
+    <div class="col">
+    <div class="circleC  d-flex justify-content-center align-items-center">S</div>
+    </div>
+    <div class="col">
+    <div class="circleD  d-flex justify-content-center align-items-center">H</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col col-xs-12 col-md-6">
+    <img src="./images/man.jpg" class="img-fluid">
+    <div class="row">
+    <div class="col col-lg-6">
+    <h5>FEATURED PROJECT</h5>
+    </div>
+    <div class="col">
+    <div class="row row-cols-auto justify-content-end">
+    <div class="col">
+    <div class="circleA  d-flex justify-content-center align-items-center">D</div>
+    </div>
+    <div class="col">
+    <div class="circleB  d-flex justify-content-center align-items-center">D</div>
+    </div>
+    <div class="col">
+    <div class="circleC  d-flex justify-content-center align-items-center">S</div>
+    </div>
+    <div class="col">
+    <div class="circleD  d-flex justify-content-center align-items-center">H</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col col-xs-12 col-md-6 ">
+    <img src="./images/security.jpg" class="img-fluid security">
+    <div class="row">
+    <div class="col col-lg-6 col-md-6 ">
+    <h5>FEATURED PROJECT</h5>
+    </div>
+    <div class="col ">
+    <div class="row row-cols-auto justify-content-end">
+    <div class="col ">
+    <div class="circleA  d-flex justify-content-center align-items-center">D</div>
+    </div>
+    <div class="col">
+    <div class="circleB  d-flex justify-content-center align-items-center">D</div>
+    </div>
+    <div class="col">
+    <div class="circleC  d-flex justify-content-center align-items-center">S</div>
+    </div>
+    <div class="col">
+    <div class="circleD  d-flex justify-content-center align-items-center">H</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>

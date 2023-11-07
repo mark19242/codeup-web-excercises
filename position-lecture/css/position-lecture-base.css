@@ -1,0 +1,109 @@
+@import "resets.css";
+:root {
+  --color-1: #ff5733; /* Bright red-orange */
+  --color-2: #33ff57; /* Bright green */
+  --color-3: #5733ff; /* Bright blue */
+  --color-4: #ff33f5; /* Bright pink */
+  --color-5: #33fff5; /* Cyan or aqua color */
+  --color-6: #f5ff33; /* Yellow */
+  --color-7: #ff8c00; /* Dark orange */
+  --color-8: #20b2aa; /* Light sea green */
+  --color-9: #8a2be2; /* Blue violet */
+  --color-10: #fa8072; /* Salmon */
+  --color-11: #90ee90; /* Light green */
+  --color-12: #ffb6c1; /* Light pink */
+  --color-13: #add8e6; /* Light blue */
+  --color-14: #f08080; /* Light coral */
+}
+
+:root {
+  --clr-dark: #0f172a;
+  --clr-light: #f1f5f9;
+  --clr-primary: #e11d48;
+  --clr-primary-light: #fb7185;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  border: 10px solid var(--clr-dark);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+.container:before {
+  content: ".container";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--clr-dark);
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: var(--clr-primary-light);
+  padding: 1em;
+  font-weight: 700;
+  color: var(--clr-light);
+  font-size: 0.8rem;
+  border-radius: 10px;
+}
+
+#item-1 {
+  background-color: var(--color-1);
+}
+#item-2 {
+  background-color: var(--color-2);
+  color: #000;
+}
+#item-3 {
+  background-color: var(--color-3);
+}
+#item-4 {
+  background-color: var(--color-4);
+}
+#item-5 {
+  background-color: var(--color-5);
+  color: #000;
+}
+#item-6 {
+  background-color: var(--color-6);
+  color: #000;
+}
+#item-7 {
+  background-color: var(--color-7);
+}
+#item-8 {
+  background-color: var(--color-8);
+}
+#item-9 {
+  background-color: var(--color-9);
+}
+#item-10 {
+  background-color: var(--color-10);
+}
+#item-11 {
+  background-color: var(--color-11);
+  color: #000;
+}
+#item-12 {
+  background-color: var(--color-12);
+}
+#item-13 {
+  background-color: var(--color-13);
+  color: #000;
+}
+#item-14 {
+  background-color: var(--color-14);
+}

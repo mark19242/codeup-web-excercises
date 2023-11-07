@@ -1,0 +1,122 @@
+@import "position-lecture-base.css";
+
+/* This is the file we will use to experiment with position */
+.container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+#item-9 {
+  position: absolute;
+  top: 0px;
+  right: -200px;
+  height: 100%;
+  transition: all ease 0.2s;
+  /* z-index: 5; */
+}
+
+.container:hover #item-9 {
+  right: 0px;
+}
+
+/* #item-5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+} */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+  opacity: 0;
+  transition: all ease 0.3s;
+  z-index: 4;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+.thumbnail-wrapper {
+  width: 300px;
+  aspect-ratio: 4/3;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 20px -7px #000;
+}
+
+.thumbnail-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.3s;
+}
+
+.thumbnail-wrapper:hover img {
+  transform: scale(1.2);
+}
+
+.thumbnail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: all ease 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail-wrapper:hover .thumbnail-overlay {
+  opacity: 1;
+}
+
+.thumbnail-overlay img {
+  width: 30px;
+  height: 30px;
+}
+
+.bg-element {
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  background-color: grey;
+  top: 20%;
+  left: 50px;
+  z-index: 2;
+}
+
+.item {
+  position: relative;
+  z-index: 3;
+}
+.page-banner {
+  width: 100%;
+  height: 50px;
+  background-color: red;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #eee;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
