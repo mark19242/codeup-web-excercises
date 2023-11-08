@@ -5,7 +5,10 @@
     <title>DOM: Query and Modify</title>
 </head>
 <body>
-
+<button id="btn1">Change Main Header</button>
+<button id="btn2">Change Subheader</button>
+<button id="btn3">Change List Items</button>
+<button id="btn4">Change Subparagraphs</button>
 <h1 id="main-header">Hello World!</h1>
 <ul>
     <li data-dbid="1">Item 1</li>
@@ -24,41 +27,94 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+
 <script>
+
         "use strict";
-        // TODO: Uncomment next line and get the main header element by id
-        const mainHeader = document.getElementById('main-header');
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-            mainHeader.html = "JavaScript is Cool"
-        // TODO: Uncomment the next line and get the sub header element by id
-        const subHeader = document.getElementById('sub-header');
+        // // TODO: Uncomment next line and get the main header element by id
+        // const mainHeader = document.getElementById('main-header');
+        // // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+        //     mainHeader.html = "JavaScript is Cool"
+        // // TODO: Uncomment the next line and get the sub header element by id
+        // const subHeader = document.getElementById('sub-header');
 
-        // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = 'blue';
+        // // TODO: Set the text color of subHeader to blue
+        // subHeader.style.color = 'blue';
 
-        // TODO: Uncomment the next line and get all list items
-        const listItems = document.querySelectorAll('ul li');
+        // // TODO: Uncomment the next line and get all list items
+        // const listItems = document.querySelectorAll('ul li');
 
-        // TODO: Set text color on every other list item to grey
-        // TODO: Set text color of li with dbid = 1 to blue
-        for (let i = 0; i < listItems.length; i++) {
-            if (i % 2 === 0) {
-                listItems[i].style.color = 'grey';
-            }
+        // // TODO: Set text color on every other list item to grey
+        // // TODO: Set text color of li with dbid = 1 to blue
+        // for (let i = 0; i < listItems.length; i++) {
+        //     if (i % 2 === 0) {
+        //         listItems[i].style.color = 'grey';
+        //     }
+        // }
+
+
+        // // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+        // const subParagraphs = document.getElementsByClassName(`sub-paragraph`)
+
+
+
+
+        // // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        //
+        // if (subParagraphs.length > 0) {
+        //     subParagraphs[0].textContent = "Mission Accomplished!";
+        // }
+
+        ////////////////////Part two of exercise///////////////
+
+        const button1 = document.getElementById("btn1");
+        const changeMainHeader = () => {
+            const mainHeader = document.getElementById("main-header");
+            mainHeader.textContent = "JavaScript is cool";
+        };
+        button1.addEventListener('click', changeMainHeader);
+
+        const button2 = document.getElementById("btn2");
+
+        const changeSubheaderColor = () => {
+            const subHeader = document.getElementById("sub-header");
+            subHeader.style.color = "blue";
         }
+        button2.addEventListener('click', changeSubheaderColor);
+
+        const button3 = document.getElementById("btn3");
+
+        // Function to change every other list item text color to grey
+        const changeListItemsColor = () => {
+            const listItems = document.querySelectorAll("li[data-dbid]");
+
+            listItems.forEach((item, index) => {
+                if (index % 2 === 1) { // Check if it's an odd-indexed item
+                    item.style.color = "grey";
+                }
+            });
+        };
+
+        // Register the listener to handle clicks on btn3
+        button3.addEventListener("click", changeListItemsColor);
+
+        // Obtain a reference to the fourth button element
+        const button4 = document.getElementById("btn4");
+
+        // Function to change the text in the sub paragraph to "Mission Accomplished"
+        const changeSubParagraphText = () => {
+            const subParagraph = document.querySelector(".sub-paragraph");
+            subParagraph.textContent = "Mission Accomplished";
+        };
+
+        // Register the listener to handle clicks on btn4
+        button4.addEventListener("click", changeSubParagraphText);
+
+            
 
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        const subParagraphs = document.getElementsByClassName(`sub-paragraph`)
 
-
-
-
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-
-        if (subParagraphs.length > 0) {
-            subParagraphs[0].textContent = "Mission Accomplished!";
-        }
+</script>
 
 
 </script>

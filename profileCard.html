@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attributes and CSS Exercise</title>
+    <link rel="stylesheet" type="text/css" href="css/attributes-style-css-js.css">
+</head>
+<body>
+<div id="profile-card">
+    <img id="profile-pic" src="https://via.placeholder.com/150" alt="Profile Picture">
+    <h2 id="profile-name">John Doe</h2>
+    <p id="profile-desc">This is a sample description text for a profile card. JavaScript will be used to manipulate this card.</p>
+</div>
+<button id="toggle-btn">Toggle Background</button>
+
+<style>
+    .sans-serif {
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .background-color  {
+        background-color: antiquewhite;
+    }
+    .background-color-alt {
+        color: red, blue, orange, green, yellow, purple;
+    }
+
+</style>
+
+<script>
+
+    function changeProfilePic() {
+        const profilePic = document.querySelector('#profile-pic');
+        profilePic.src = 'img/thumbs-up-bro.webp';
+    }
+
+
+    setTimeout(changeProfilePic, 2000);
+
+    function changeName () {
+        const profileName = document.querySelector(`h2`);
+        profileName.innerHTML = `Mark Smith`;
+    }
+
+    setTimeout(changeName, 4000);
+
+
+
+    function changeDescriptionStyle() {
+        const profileDesc = document.querySelector('#profile-desc');
+        profileDesc.classList.add(`background-color`);
+    }
+    setTimeout(changeDescriptionStyle, 6000);
+
+    function toggleBackgroundColor() {
+        const profileCard = document.querySelector('#profile-card');
+        profileCard.classList.toggle('background-color-alt'); // Toggle a class
+    }
+
+    setInterval(toggleBackgroundColor, 2000);
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+#profile-card {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#profile-name {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#profile-desc {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#toggle-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-btn:hover {
+    background-color: #0056b3;
+}
+
+
