@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <header class="text-center my-4">
+        <h1>To-Do List</h1>
+    </header>
+    <main class="row">
+        <section class="border border-lg-none p-4 col-lg-4">
+            <form id="to-do-form">
+                <h3><label class="form-label" for="to-do">Enter to-do:</label></h3>
+                <input class="form-control" type="text" name="to-do" id="to-do">
+                <div class="d-grid"><button class="btn btn-secondary mt-3 add">Add To-Do</button></div>
+            </form>
+        </section>
+        <section class="my-4 my-lg-0 col-lg-8">
+            <h3>To-Dos:</h3>
+            <ul class="list-group" id="to-do-list">
+                <li class="to-do-item list-group-item d-flex justify-content-between align-items-center">
+                    <p class="m-0">Finish this exercise</p>
+                    <button class="btn btn-danger">Done</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+<script src="./js/to-do-list.js"></script>
+
+</body>
+</html>

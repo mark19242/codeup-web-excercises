@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parks</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .park-info h3 {
+            cursor: progress;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .highlighted {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<h1 id="main-header">National Parks Facts</h1>
+<button class="btn-primary" onclick="highlightLastLi()">Features</button>
+
+<section class="park-info">
+    <h3 id="sequoia-header">Sequoia National Park</h3>
+    <ul id="sequoia-facts">
+        <li data-name="1">Established: September 25, 1890</li>
+        <li data-name="2">Location: California</li>
+        <li data-name="3">Size: 404,064 acres</li>
+        <li data-name="4">Features: Giant sequoia trees, Moro Rock, Crystal Cave</li>
+    </ul>
+</section>
+
+<section class="park-info">
+    <h3 id="rainier-header">Mount Rainier National Park</h3>
+    <ul id="rainier-facts">
+        <li data-name="1">Established: March 2, 1899</li>
+        <li data-name="2">Location: Washington</li>
+        <li data-name="3">Size: 236,381 acres</li>
+        <li data-name="4">Features: Mount Rainier, subalpine meadows, Paradise area</li>
+    </ul>
+</section>
+
+<section class="park-info">
+    <h3 id="crater-header">Crater Lake National Park</h3>
+    <ul id="crater-facts">
+        <li data-name="1">Established: May 22, 1902</li>
+        <li data-name="2">Location: Oregon</li>
+        <li data-name="3">Size: 183,224 acres</li>
+        <li data-name="4">Features: Crater Lake, Wizard Island, Old Man of the Lake</li>
+    </ul>
+</section>
+
+<script>
+    document.querySelectorAll('.park-info h3').forEach(h3 => {
+        h3.addEventListener('click', (e) => {
+            const ul = h3.nextElementSibling;
+            const lis = ul.querySelectorAll('li');
+
+            lis.forEach(li => {
+                li.classList.toggle('bold-text');
+            });
+        });
+    });
+
+    const highlightLastLi = (e) => {
+        document.querySelectorAll('.park-info ul li:last-child').forEach(lastLi => {
+            lastLi.classList.add('highlighted');
+        });
+    };
+
+    document.querySelectorAll('.park-info ul li').forEach(li => {
+        li.addEventListener('click', (e) => {
+            // Remove the blue font color from all first li elements in the park-info sections
+            document.querySelectorAll('.park-info ul li:first-child').forEach(firstLi => {
+                firstLi.style.color = ''; // Reset to default color
+            });
+
+            // Add blue font color to the first li of the clicked list item's parent ul
+            const parentUl = li.parentElement;
+            const firstLiOfParentUl = parentUl.querySelector('li:first-child');
+            if (firstLiOfParentUl) {
+                firstLiOfParentUl.style.color = 'blue';
+            }
+        });
+    });
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -9,6 +9,7 @@
 <button id="btn2">Change Subheader</button>
 <button id="btn3">Change List Items</button>
 <button id="btn4">Change Subparagraphs</button>
+
 <h1 id="main-header">Hello World!</h1>
 <ul>
     <li data-dbid="1">Item 1</li>
@@ -90,7 +91,7 @@
 
             listItems.forEach((item, index) => {
                 if (index % 2 === 1) { // Check if it's an odd-indexed item
-                    item.style.color = "grey";
+                    item.style.color = "red";
                 }
             });
         };
@@ -110,13 +111,40 @@
         // Register the listener to handle clicks on btn4
         button4.addEventListener("click", changeSubParagraphText);
 
-            
+            ///////// part 3 of exercise ///////
+
+        const mainHeader = document.getElementById('main-header');
+
+        mainHeader.addEventListener('click', (e) => {
+            mainHeader.style.backgroundColor = 'blue';
+        });
+
+        const paragraphs = document.querySelectorAll('p');
+
+        paragraphs.forEach(paragraph => {
+            paragraph.addEventListener('dblclick', (e) => {
+                paragraph.style.fontSize = '50px';
+            });
+
+        });
+
+        const listItems = document.querySelectorAll('li');
+
+        listItems.forEach(listItem => {
+            listItem.addEventListener('mouseenter', (e) => {
+                listItem.style.color = 'orange';
+            });
+
+            listItem.addEventListener('mouseleave', (e) => {
+                listItem.style.color = 'black';
+            });
+        });
 
 
 
 </script>
 
 
-</script>
+
 </body>
 </html>
