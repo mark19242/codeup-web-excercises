@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Hammer",
+    "quantity": 25,
+    "categories": ["tool"],
+    "price": 20
+  },
+  {
+    "title": "Drill",
+    "quantity": 5,
+    "categories": ["tool", "powered"],
+    "price": 100
+  },
+  {
+    "title": "Mower",
+    "quantity": 5,
+    "categories": ["tool", "gas", "outdoor"],
+    "price": 200
+  },
+  {
+    "title": "Screwdrivers",
+    "quantity": 25,
+    "categories": ["tool"],
+    "price": 10
+  },
+  {
+    "title": "Wrench Set",
+    "quantity": 15,
+    "categories": ["tool", "mechanic"],
+    "price": 50
+  },
+  {
+    "title": "Circular Saw",
+    "quantity": 8,
+    "categories": ["tool", "powered"],
+    "price": 150
+  },
+  {
+    "title": "Garden Shears",
+    "quantity": 12,
+    "categories": ["tool", "outdoor"],
+    "price": 30
+  },
+  {
+    "title": "Paintbrush Set",
+    "quantity": 20,
+    "categories": ["tool", "painting"],
+    "price": 15
+  }
+]

@@ -422,3 +422,72 @@ const upperCase = str => typeof str === 'string' ? str.toUpperCase() : false;
                             }, delay);
                         };
                     };
+
+                    /////////////////
+                // const marker = new mapboxgl.Marker()
+                //     .setLngLat(coo)
+                //     .addTo(map);
+                // const popup = new mapboxgl.Popup()
+                //     .setLngLat([-98.4916, 29.4260])
+                //     .setHTML("<p>Codeup Rocks!</p>")
+                //     .addTo(map);
+                // map.flyTo({
+                //     center: [-98.4916, 29.4260],
+                //     zoom: 16,
+                //     speed: 7,
+                // });
+
+
+                //     <!DOCTYPE html>
+                //     <html lang="en">
+                //
+                //         <head>
+                //         <meta charset="UTF-8">
+                //         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                //         <title>Weather Map Project</title>
+                //     <link rel="stylesheet" href="./css/weather_map.css">
+                //     </head>
+                //
+                //     <body>
+                //     <div class="page-wrapper">
+                //         <div id="map" class="container-fluid flex-grow-1 p-0"></div>
+                //     </div>
+                //
+                //     <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+                //     <script type="module" src="./js/api/openweather.js"></script>
+                //     <script type="module" src="js/weather_map.js"></script>
+                //     </body>
+                //
+                // </html>
+
+
+
+                    ////////////////////////////////////////////////
+//                     import {keys} from "./keys.js";
+//
+//                     const getCoordinates = async (searchText) => {
+//                         searchText = encodeURIComponent(searchText);
+//                         const url =`https://api.mapbox.com/geocoding/v5/mapbox.places/${searchText}.json?access_token=${keys.mapbox}`;
+//                         const options = {
+//                             method: "GET",
+//                             headers: {
+//                                 "Content-Type": "application/json",
+//                             },
+//                         };
+//                         const response = await fetch(url, options);
+//                         const data = await response.json();
+//                         console.log(data);
+//                         return data.features[0].center;
+//                     }
+// //MAIN
+//                     (async () => {
+//                         const coordinates = await getCoordinates("8700 Tereso Dr Suite 100, San Antonio, TX, 78217");
+//                         mapboxgl.accessToken = keys.mapbox;
+//                         const map = new mapboxgl.Map({
+//                             container: 'map', // container ID
+//                             style: 'mapbox://styles/mapbox/satellite-v9', // style URL
+//                             center: coordinates, // starting position [lng, lat]
+//                             zoom: 10, // starting zoom
+//                         })
+//
+//                     })();
